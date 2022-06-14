@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.game-board{
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+.Naruto{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+.Sasuke{
+    width: 150px;
+    position: absolute;
+    bottom: -30px;
+    animation: Sasuke-animation 2s infinite linear;
+
+}
+@keyframes Sasuke-animation{
+    from{
+        right: -80px;
+    
+    }
+    to{
+        right: 100%;
+    }
+
+}
