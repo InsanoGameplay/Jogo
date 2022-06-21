@@ -1,8 +1,6 @@
 *{
     padding: 0px;
     margin: 0px;
-    
-
 }
 h1{
     display: flex;
@@ -19,15 +17,19 @@ h1{
     
 }
 .Naruto{
-    width: 150px;
+    height: 140px;
+    width: 140px;
     position: absolute;
     bottom: 0;
+}
+.jump{
+    animation: jump 650ms infinite ease-out; 
 }
 .Sasuke{
     width: 150px;
     position: absolute;
     bottom: -30px;
-    animation: Sasuke-animation 2s infinite linear;
+    animation: Sasuke-animation 1.7s infinite linear;
 
 }
 @keyframes Sasuke-animation{
@@ -39,4 +41,17 @@ h1{
         right: 100%;
     }
 
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+    50%,55%{
+        bottom: 150px;
+    }
+    
+    100%{
+        bottom: 0;
+    }
 }
